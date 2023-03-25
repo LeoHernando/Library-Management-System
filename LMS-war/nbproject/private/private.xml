@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/src/java/managedbean/BooksManagedBean.java</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/index.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/home.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/searchMembers.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/lend.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/layout/notLoggedIn.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/src/java/managedbean/LendsManagedBean.java</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/src/java/managedbean/AuthenticationManagedBean.java</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/registerMember.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/layout/default.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/src/java/managedbean/LibraryManagedBean.java</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/return.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/books.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/web/authenticated/lendsAndReturns.xhtml</file>
+            <file>file:/C:/Users/lhern/OneDrive/Documents/NetBeansProjects/LMS/LMS-war/src/java/filter/AuthenticationFilter.java</file>
+        </group>
+    </open-files>
+</project-private>

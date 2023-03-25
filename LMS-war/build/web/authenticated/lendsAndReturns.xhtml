@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./../layout/default.xhtml"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <ui:define name="title">
+        Lends and Returns
+    </ui:define>
+    <ui:define name="content">
+        <h:form id="form">
+            <p:growl id="growl" showDetail="true" sticky="true" />
+            
+            <p:dataTable var="lendAndReturn"
+                         value="#{lendsManagedBean.lendsAndReturns}"
+                         resizableColumns="true" 
+                         emptyMessage="No Lend or Return found">
+                <f:facet name="header">
+                    <p:outputPanel style="text-align: right;">
+                        <h:outputText value="Search: " />
+                        <h:selectOneMenu value="#{lendsManagedBean.searchType}">
+                            <f:selectItem itemValue="IDNUMBER" itemLabel="ID number" />
+                            <f:selectItem itemValue="BOOKID" itemLabel="Book ID" />
+                            <p:ajax listener="#{lendsManagedBean.handleSearch}" update="form"/>
+                        </h:selectOneMenu>
+                        <p:inputText placeholder="Enter keywords" value="#{lendsManagedBean.searchString}">
+                            <p:ajax event="keyup" update="form" listener="#{lendsManagedBean.handleSearch}" />
+                        </p:inputText>
+                    </p:outputPanel>
+                </f:facet>
+
+                <p:column headerText="Lend Id">
+                    <h:outputText value="#{lendAndReturn.lendId}"/>
+                </p:column>
+                <p:column headerText="Book ID">
+                    <h:outputText value="#{lendAndReturn.bookId}"/>
+                </p:column>
+                <p:column headerText="Fine Amount">
+                    <h:outputText value="#{lendAndReturn.fineAmount}"/>
+                </p:column>
+                <p:column headerText="ID Number">
+                    <h:outputText value="#{lendAndReturn.idNum}"/>
+                </p:column>
+                <p:column headerText="Lend Date">
+                    <h:outputText value="#{lendAndReturn.lendDate}">
+                        <f:convertDateTime pattern ="yyyy-MM-dd HH:mm" />
+                    </h:outputText>
+                </p:column>
+                <p:column headerText="Return Date">
+                    <h:outputText value="#{lendAndReturn.returnDate}">
+                        <f:convertDateTime pattern ="yyyy-MM-dd HH:mm" />
+                    </h:outputText>
+                </p:column>
+                <p:column headerText="Fine Paid">
+                    <p:commandButton type="button" icon="pi pi-check" styleClass="rounded-button ui-button-outlined" action="#{lendAndReturn.setFineAmount(0.0)}" />
+                </p:column>
+                
+            </p:dataTable>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
